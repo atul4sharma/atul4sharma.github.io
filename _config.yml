@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-# Site settings
-title: Atul Sharma
+name: My blog
+author: Atul Sharma
 email: atulsharma406@gmail.com
 url: "http://atulsharma.me"
 github_username:  atul4sharma
