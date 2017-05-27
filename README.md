@@ -1,2 +1,2 @@
-## Website
+## My Blog
 *Blog* and *Stuff*
