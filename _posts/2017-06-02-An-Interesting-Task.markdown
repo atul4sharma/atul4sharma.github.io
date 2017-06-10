@@ -1,5 +1,5 @@
 ---
 layout: posts
 ---
-Yesterday was interesting.
-This task -> https://phabricator.kde.org/D6062
+# Yesterday was interesting.
+This task [T6231](https://phabricator.kde.org/T6231)
