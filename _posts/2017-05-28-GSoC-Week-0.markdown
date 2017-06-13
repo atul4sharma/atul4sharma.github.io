@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 ---
 # Up until now :
 * I have familiarize myself with the codebase of Koko image gallery

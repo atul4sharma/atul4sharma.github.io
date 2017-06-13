@@ -1,6 +1,25 @@
-theme: jekyll-theme-minimal
 # Site settings
 title: Atul Sharma
+header-img: img/home-bg.jpg
 email: atulsharma406@gmail.com
+#copyright_name: Your/Project/Corporate Name
+description: "Blog and Stuff"
+baseurl: ""
 url: "http://atulsharma.me"
+twitter_username: atulsharma406
 github_username:  atul4sharma
+#facebook_username:  atul.sharma.123276
+email_username:  atulsharma406@gmail.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
