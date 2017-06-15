@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-# Up until now :
+### Up until now :
 * I have familiarize myself with the codebase of Koko image gallery
 * Implemented deleteImage function in ImageViewer. Also checks the file existence of image in ImageViewer before hand.
 * Adds a separate folder for qml kirigami ui. [T6188](https://phabricator.kde.org/T6188)

@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-# So far, porting to Kirigami elements has started
+### So far, porting to Kirigami elements has started
 * Sidebar is connected to mainview now( model in the mainview now changes according to filter selected from the Sidebar)[T6231](https://phabricator.kde.org/T6231)
 * AlbumView has just about the basic structure in terms of display delegates.
 * On clicking the collection in AlbumView page now redirects to OverviewPage, that shows image of particular collection( according to the filter selected)[T6248](https://phabricator.kde.org/T6248)
