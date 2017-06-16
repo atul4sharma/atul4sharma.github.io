@@ -1,0 +1,12 @@
+---
+layout: post
+---
+### Week 2 was just about minor changes
+* Change the delegate for the AlbumView
+    - A better delegate FocusScope which is composed of Image and Kirigami's BasicListItem for showing label.
+* Changes type of previouslySelectedAction from string to Kirigami.Action.
+    - No use of findAction function now
+* Made sidebar actions look selected when the corresponding view is loaded
+* Removes handleVisible property for the GlobalDrawer
+    - Handle property is something that should be dependent on the default style used by the environment
+* Implementation of ImageViewer has started
