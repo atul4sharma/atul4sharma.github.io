@@ -7,6 +7,9 @@ layout: post
 * Changes type of previouslySelectedAction from string to Kirigami.Action.
     - No use of findAction function now
 * Made sidebar actions look selected when the corresponding view is loaded
+    - [T6304](https://phabricator.kde.org/T6304)
 * Removes handleVisible property for the GlobalDrawer
+    - [T6292](https://phabricator.kde.org/T6292)
     - Handle property is something that should be dependent on the default style used by the environment
 * Implementation of ImageViewer has started
+    - [T6268](https://phabricator.kde.org/T6268)
