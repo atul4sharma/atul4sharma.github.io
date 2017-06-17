@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ['KDE']
 ---
 ### So far, porting to Kirigami elements has started
 * Sidebar is connected to mainview now( model in the mainview now changes according to filter selected from the Sidebar).

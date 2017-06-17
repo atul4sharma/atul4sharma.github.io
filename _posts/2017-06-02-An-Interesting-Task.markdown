@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ['KDE']
 ---
 ### Yesterday was interesting.
 This task 

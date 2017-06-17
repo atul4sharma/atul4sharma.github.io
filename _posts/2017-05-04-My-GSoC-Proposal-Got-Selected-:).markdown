@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ['KDE']
 ---
 ## Every Summer has it's story.
 ### Mine is Google Summer Of Code this year :)

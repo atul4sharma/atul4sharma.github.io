@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ['KDE']
 ---
 ### Up until now :
 * I have familiarize myself with the codebase of Koko image gallery

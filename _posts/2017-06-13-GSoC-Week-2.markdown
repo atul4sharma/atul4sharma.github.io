@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ['KDE']
 ---
 ### Week 2 was just about minor changes
 * Change the delegate for the AlbumView
