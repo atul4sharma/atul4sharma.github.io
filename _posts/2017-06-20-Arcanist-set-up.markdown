@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ['KDE']
 ---
 ### Set up the arcanist for Koko
 * It was pretty much easy to install. For my **Archlinux** just below command did the work for me.
