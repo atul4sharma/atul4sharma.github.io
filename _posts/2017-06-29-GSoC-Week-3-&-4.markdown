@@ -1,0 +1,26 @@
+---
+layout: post
+tags: ['KDE']
+date: 2017-06-29 11:35:00 +0530
+---
+### Quite a few changes were introduced during this time period
+* Keyboard navigation was fixed for the GridView of AlbumView and OverviewPage.
+    - The GridView was not getting focusScope because of the Kirigami's ScrollablePage, which was corrected by [Marco Martin](http://notmart.org/blog/) in the Kirigami repository.
+<br><br>
+* Introduced corner action for selection of collections and images same as that in Dolphin file manager.<br><br>
+    - Selecting a collection (before clicked)
+    ![Selecting a collection before clicked](/img/selection-before-clicked.png)
+    <br><br>
+    - Selecting a collection (after clicked)
+    ![Selecting a collection after clicked](/img/selection-after-clicked.png)
+    <br><br>
+* Made visibilty of the selectionHighlight dependent on the selection of the collections.
+    - As soon as a collection is clicked, the index is inserted into the m_selectionModel (SortModel).
+    - And the visibilty status of the selectionHighlight is dependent on whether the index is selected or not in the m_selectionModel
+    <br><br>
+* Completely removed Baloo from the application as it was not very useful according to the application requirements.
+    <br><br>
+* The implementation of ImageFolderModel is changed a little bit. 
+    - Now the ImageFolderModel's implementation is based on KIO framework.
+    <br><br>
+* A new model ImageListModel is created to store just the list of images. That is each row of the model will be a single image.
