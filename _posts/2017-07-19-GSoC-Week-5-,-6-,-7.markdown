@@ -1,0 +1,63 @@
+---
+layout: post
+tags: ['KDE']
+date: 2017-07-19 22:25:00 +0530
+---
+### A lot of implementation changes were introduced
+* Selection highlights depends upon the items selected in the model.
+    - Previously, the selection higlights toggled when the SelectionButton for an image was clicked
+    - Now the higlighted images are shown according to the items selected and stored in the selection model<br><br>
+* Completely removed baloo dependency<br><br>
+* For "By Folder" filter KIO based model is used for folder representation of images.
+    - It shows the mixed images and folders in the AlbumView.
+    - It shows the images in hierarchical structure, as they are represented in the memory. Just like a file manager would represent, but just the images and folders.<br><br>
+    ![Folder Structure](/img/folder-structure.png)
+    <br><br>
+* Adds a new ImageListModel
+    - This model would just store the image list irrespective of whether they are from ImageLocationModel or ImageTimeModel.
+    - This made the representation of images in the GridView and the ImageViewer a lot more easier<br><br>
+* Better implementation of ImageViewer done by [Marco Martin](http://notmart.org/blog/)
+    - Better animations for ImageViewer to appear and disappear.
+    - Pinch zoom for the single Image appearing in the ImageViewer.
+    - Zoom animations for the images in ImageViewer. Zoom on double clicking the image as well as on Ctrl + wheel action<br><br>
+    > Normal Image
+    ![Zero Zoom](/img/zero-zoom.png)
+    <br><br>
+    > Zoom on Double Click
+    ![Double Click Zoom](/img/double-click-zoom.png)
+    <br><br>
+    > Ctrl + wheel Zoom
+    ![Ctrl + Wheel Zoom](/img/ctrl-wheel-zoom.png)
+    <br><br>
+* Automatic updation of the currentIndex for the GridView if the index changes in the ImageViewer.<br><br>
+* Makes the thumbnailer code common to all the models.
+    - Faster loading of thumbnails for the GridView.<br><br>
+* Totally removed the old code base qml implementation.<br><br>
+* Adds ```KDirNotify``` and ```KDirWatch``` to support live updates of the data in the time and location collections as well.
+    - We don't need to add KDirNotify and KDirWatch to the ImageFolderModel since it subclasses KDirModel which already takes care of the changes.
+    - KDirWatch uses the concept of singleton object ie we can use just a single instance of the KDirWatch class for the entire application.<br><br>
+* Makes the enums common for all the models.<br><br>
+* i18n'z all the text elements.<br><br>
+* Creates a different SortModel for the ImageViewer to apply sort as well as the filter to show just the images.<br><br>
+* Adds contextualActions to the AlbumView.
+    - For now three actions are added ```Select all```, ```Deselect all``` and ```Delete selections```.
+    - These actions can just be applied on the images and not on the collections or folders.<br><br>
+* Selectively loads desktop and mobile user interface depending upon whether the environment variable ```QT_QUICK_CONTROLS_MOBILE``` is set or not.<br><br>
+    - There is just single difference between mobile UI and desktop UI, that is of the contextualActions. For desktop version these appear on the toolbar and for mobile version these appear in the contextDrawer.
+    - Rest of the changes are handled brilliantly by the Kirigami.<br><br>
+    > Desktop UI
+    ![Desktop UI](/img/desktop-ui.png)
+    <br><br>
+    > Mobile UI
+    ![Mobile UI](/img/mobile-ui.png)
+* Adds a selection mode for mobiles that is activated on pressAndHold.<br><br>
+    > On PressAndHold
+    ![Tap and Hold](/img/tap-and-hold.png)
+* Opens a specific image via the commandline.
+    - That allows us to open the image from the file manager also. 
+    - It takes you directly to the single image in the ImageViewer
+    - It also pushes the intermediate folders into the pageStack(that contains AlbumView) starting from the standard Pictures location to the folder containing the image, for the "By Folder" filter.
+    - If the image is not in the Pictures location then it just pushes the folder into the pageStack(that contains AlbumView).
+    - Though this is not perfect yet. The problem is that the SortModel(QSortFilterProxyModel) in the ImageViewer is populating in pieces that is first when the sourceModel for the model in ImageViewer is set to specific ImageFolderModel with empty data (I think) and then again the rowsInserted signal is emitted and the model is populated again and thus making the rowCount to double of the actual number of images, which then makes the currentIndex in the ImageViewer invalid(-1) at the beginning and hence the navigation starts from the first image in the list instead of the selected image. Searching for the alternatives :)
+    <br><br>
+* ```PS: The background shown in the application is theme dependent. This is Breeze-dark theme```
