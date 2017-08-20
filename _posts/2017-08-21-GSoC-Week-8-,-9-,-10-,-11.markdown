@@ -1,0 +1,51 @@
+---
+layout: post
+tags: ['KDE']
+date: 2017-08-21 00:50:00 +0530
+---
+### Focus on the ImageViewer
+* The major focus for this time period was the ImageViewer that shows the single image.
+* Made the ImageViewer full-screen
+    - The imageviewer can show image in windowed mode as well as full-screen mode
+    - Extra controls will not occupy space used to show the image. Hence there will be less distraction
+    - User can alternate the viewing mode just by pressing ```Key F```
+    > Windowed
+    ![Windowed](/img/windowed.png)
+    <br><br>
+    > Full Screen
+    ![Full Screen](/img/full-screen.png)
+
+* Adds a ```No Images found``` label to the AlbumView screen when there are no images corresponding to a particular filter( selectable from the sidebar), so that user should not assume that the application is running slow and maybe it is loading the images
+![No Image](/img/no-image.png)
+
+* When performing a collective delete operation the view is updated after a certain amount of time( 200ms)
+    - Earlier the view was updated after every single delete operation which made the application unresponsive
+    - Now it is better since the view is updated after a certain amount of time and it does not care about the number of image.
+
+* Adds two action in the ImageViewer ![Actions](/img/actions.png)
+    - ```back``` action 
+        - It takes the user back to the AlbumView grid 
+    - ```share``` action
+        - This action is used to share the image and the shared url is also copied to the clipboard
+        - The action uses KDE's purpose framework that identifies the mimeType of a file and shows the sharing options for file 
+        - Since we are just trying to share image, the sharing options are 
+            - "Imgur" - Share the image to imgur
+            - "Send to Device" - Uses kdeconnect to share the image to connected device
+            - "Send to contact"
+            - "Save as" - Save the image to local filesystem
+            - "Twitter" - Shares the image to twitter with a twitter text. You have to set up your twitter account in the settings first
+>Share action
+![Share action](/img/share-action.png)
+
+* Added a contextDrawer to the ImageViewer to show editing options to edit the image
+    - For implementing this we had to use the new layer concept of Kirigami by which we can add layers to column of the rowStack of kirigami. Because the ImageViewer is separate from the other columns in the row it had to be implemented this way
+    - The actions in the contextDrawer for now are ```Rotate left``` and ```Rotate right```
+    
+    ![Context Drawer](/img/context-drawer.png)
+
+* Editing of the image is handled in C++ class ImageDocument
+    - This will allow us to have better controls over the image editing as the image to be edited will be an instance of the QImage
+    
+* Currently working on some more editing actions such as "Brightness", "Saturation" etc.
+
+
