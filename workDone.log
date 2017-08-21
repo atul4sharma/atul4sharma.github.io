@@ -1,0 +1,1155 @@
+commit 4c563acdbe1af37b48cebba453eee4c741837105
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sun Aug 20 04:17:35 2017 +0530
+
+    Adds a slider to control the brightness of the image
+    
+    Summary:
+    Refs T6268
+    * Adds slider in the imageviewer to change the brightness
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7349
+
+commit d1bbc1c024c0a6cd865d14b822f06d6656470dcd
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Aug 19 01:11:39 2017 +0530
+
+    Saves the rotated image on disk
+    
+    Summary: Refs T6268
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7400
+
+commit 7934e1bc4f2366d7d4d2d582303e5e95e2713d1e
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Aug 19 00:49:39 2017 +0530
+
+    Rotating the image using ImageDocument c++ class
+    
+    Summary: Refs T6268
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7399
+
+commit a7526254eb790a62326af615e9efa053f791957e
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Aug 19 00:24:01 2017 +0530
+
+    Uses kquickcontrolsaddons' QImageItem to display image in ImageViewer and C++ class ImageDocument to handle the image transformation related operations
+    
+    Summary:
+    Refs T6268
+    * Using ImageDocument will allow us to apply transformations such as rotations etc from c++
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7397
+
+commit 98f1b23c056c0dea3fca790fdd1cfeb9469b2643
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Aug 16 18:02:06 2017 +0530
+
+    Adds contextDrawer to ImageViewer
+    
+    Summary:
+    Refs T6268
+    * Adds Rotate left and Rotate right actions to the contextDrawer
+    * contextDrawer can also be opened by the edit action
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7346
+
+commit 3cc6fc904bd3b1b4df14813415cc2536a6edb55e
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Aug 15 02:21:38 2017 +0530
+
+    Copies the shared url to clipboard
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D7313
+
+commit a98a6afca7f13df5d4d7e836361f39ff3103f690
+Merge: 646d459 acbbd1c
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Aug 15 00:57:30 2017 +0530
+
+    Changes are made to mass-share action
+    Shows the share popup in mass share instead of columnlayout
+
+commit 646d459ad909912c27357ed96722119f61a58fcd
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Aug 12 01:02:03 2017 +0530
+
+    Adds a mass-share action in browsing mode
+    
+    Summary: * Shares the selected images
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D7258
+
+commit d939644aae8922412b52a395af1ce753f5b0195d
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Aug 11 16:53:02 2017 +0530
+
+    Removes settings button from GlobalDrawer
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D7247
+
+commit e3385e230b3fb6eb19dfe3691d55036088c05c1d
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Aug 11 00:33:05 2017 +0530
+
+    Hides the footerList and actions in ImageViewer for full screen image view mode
+    
+    Summary:
+    Refs T6268
+    Adds property binding on the visibility of the ImageViewer's actions and footerList
+    
+    Test Plan: Testing done
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7234
+
+commit ec3ad1270e16cd853d87496eb9755ee96ce77ec2
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Aug 10 22:30:25 2017 +0530
+
+    Removes comment used for debugging
+    
+    Reviewers: mart
+    
+    Reviewed By: mart
+    
+    Differential Revision: https://phabricator.kde.org/D7233
+
+commit 66d90582a061623d3998f604a162dca24b6f24da
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 26 19:20:35 2017 +0530
+
+    Adds view-close( working), share( working), edit action to imageviewer
+    
+    Summary:
+    Refs T6268
+    * Share action is implemented using Purpose.AlternativesView
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D6969
+
+commit 936f26f7fd99483dad110282a782ce529f0777d9
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jul 25 16:46:36 2017 +0530
+
+    Emits the storageModified signal after 200 ms rather than after every single operation of Processor::addFile or Processor::removeFile
+    
+    Summary:
+    Updates the view after 200 ms when the first database operation is performed
+    Since ImageStorage::commit emits ImageStorage::storageModified and rest of the model reacts to the ImageStorage::storageModified signal to update the view. this will be a better approach
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6896
+
+commit f487f4e38ce40799719a0161ba7214ca8642b1a0
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 24 19:18:52 2017 +0530
+
+    Shows a "No Images Found" label when there is no image
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6878
+
+commit 616f20db2fbdec5f1aa8686302eba83e80e9a53b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 21 19:17:13 2017 +0530
+
+    Adds a footer list for imageviewer
+    
+    Summary:
+    Refs T6268
+    * Shows the list of more than one images
+    * Auto-hides after 2 secs of image change
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D6809
+
+commit ecf8bb8d5fb6c27df98073aa2405d0080b798802
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 21 00:17:36 2017 +0530
+
+    Adds a shortcut for fullscreen in the imageViewer
+    
+    Summary: * On pressing key F the ImageViewer will show image on full screen
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6805
+
+commit 4447b8c053799a4f7121c98f5f376022ca2d2f16
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 19 23:54:47 2017 +0530
+
+    Removes the puppies image used for debugging earlier
+    
+    Reviewers: mart
+    
+    Reviewed By: mart
+    
+    Differential Revision: https://phabricator.kde.org/D6787
+
+commit b01ddf16b432af6273cca301cd04b97404663a5f
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jul 18 11:46:49 2017 +0530
+
+    Pushes folders into the pageStack if the image is located in ~/Pictures path
+    
+    Summary:
+    Refs T6498
+    * highlighted index in the views has to be managed yet
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6498
+    
+    Differential Revision: https://phabricator.kde.org/D6765
+
+commit 1bf7dd8637837e7889f0971bef60fa4dabe56fb8
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 17 19:44:27 2017 +0530
+
+    Corrects logic to distinguish among foreign path and ~/Pictures path at the startup of the application
+    
+    Summary:
+    Refs T6498
+    * the earlier logic to distinguish between foreign path and ~/Pictures was in setUrl() of ImageFolderModel, which was called again again every time any folder is clicked and thus setting the url again to ~/Pictures
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6498
+    
+    Differential Revision: https://phabricator.kde.org/D6753
+
+commit ed876e0f2ad5098e5671fbb05a7a5221bd83ed31
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 17 17:50:33 2017 +0530
+
+    Find the intermediate folders for an image
+    
+    Summary:
+    Refs T6498
+    * imagePathArgument is now a QStringList and it is passed as it is to the qml
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6498
+    
+    Differential Revision: https://phabricator.kde.org/D6742
+
+commit 224abe21d6f2715d3e36188473f4c833df4b4549
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 14 23:17:31 2017 +0530
+
+    Update the desktop file to support opening of image from file manager
+    
+    Summary: Refs T6497
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6497
+    
+    Differential Revision: https://phabricator.kde.org/D6702
+
+commit 6adbb0e2f9ef9413721b62d3216a42f3a5cb99d8
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 14 21:38:46 2017 +0530
+
+    Fix flickering of imageViewer
+    
+    Summary:
+    Refs T6497
+    * If a command line image is passed it first showed the alumview and then flickers to show imageviewer
+    * this patch allows to show imageviewer in case an image is given
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6497
+    
+    Differential Revision: https://phabricator.kde.org/D6703
+
+commit 58a21b15572fc72ff739856c5edc9d659796825e
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 14 19:41:35 2017 +0530
+
+    Opens the imageViewer depending upon the imagePath provided
+    
+    Summary:
+    Refs T6497
+    * Shows the asked image in the imageViewer
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6497
+    
+    Differential Revision: https://phabricator.kde.org/D6678
+
+commit 5935a9287fe6157c86c83f16db2be66f05dd0a10
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 14 00:46:30 2017 +0530
+
+    Fix folder navigation
+    
+    Summary: * Since the KIO requires need to know whether path is from local filesystem or a hyperlink
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6497
+    
+    Differential Revision: https://phabricator.kde.org/D6681
+
+commit 08570356d996465a0af62c4a8becdcd677c848b7
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jul 13 12:31:00 2017 +0530
+
+    Opens the koko application with the folder containing the image( passed via command line arguments)
+    
+    Summary:
+    Refs T6497
+    * Opens the By folder part of koko with proper folder
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6497
+    
+    Differential Revision: https://phabricator.kde.org/D6669
+
+commit 4189330348bbf137010597ce7b875de7321f91a0
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 12 19:51:26 2017 +0530
+
+    Adds positional argument to accept the path of image user want to open
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6652
+
+commit 77d9f91ec3cf3cce4028f4e6725b408e30b7f311
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 12 18:42:51 2017 +0530
+
+    Re-implement virtual function lessThan() for QSortFilterProxyModel
+    
+    Summary: * provides support for sorting folders and files in a way that all the sorted folders are shown before the sorted images
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6650
+
+commit daa8df86e62a03193c249eadb18be45e842c35d1
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 12 15:39:36 2017 +0530
+
+    Use Rectangle and Text component for displaying Label for Album instead of BasicListItem
+    
+    Summary: Uses Rectangle and Text element
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6641
+
+commit 7c9d2c4e752cb2e418132f5caa07af36b253ad3c
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 12 03:01:00 2017 +0530
+
+    Adds Ctrl + Click selection for images in view
+    
+    Summary: * Checks whether the control key is pressed or not and thus make selections
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6637
+
+commit ea2c5d53bc89ea24810d4e6e1972bf949b3479ed
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jul 11 21:43:08 2017 +0530
+
+    Adds tooltip to AlbumView's contextualActions
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6633
+
+commit 18e96d3f7cae4c2a46d91918edf52532c5417637
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 10 23:54:49 2017 +0530
+
+    Applies filter to just show the images in the ImageViewer
+    
+    Summary:
+    * adds SortModel in ImageViewer to filter just the images for the ImageViewer listView
+    * uses filterRole and filterRegExp properties exposed by QSortFilterProxyModel
+    * mapping from source and to source are done in order to keep the currentItem consistent for every view
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D6607
+
+commit 1dff4c0e5d1ab2133b61912a0d89fb3c563ce6e8
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 10 12:07:32 2017 +0530
+
+    Adds icon to the contextualActions
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6600
+
+commit 336af6853620657766949eae06b6656dbf991b6d
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jul 8 18:04:13 2017 +0530
+
+    Adds the ImageStorage::instance()->commit() to the Processor::addFile and Processor::removeFile
+    
+    Summary:
+    * Previously it just called ImageStorage::commit() for just initialFetch
+    * Since ImageStorage::commit() emits ImageStorage::storageModified() signal, the ImageLocationModel, ImageTimeModel and ImageListModel updates automatically as they responds to the storageModeigied signal and reset the view
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6471
+    
+    Differential Revision: https://phabricator.kde.org/D6570
+
+commit cf16e09e11ed58befcdc671a2ea521e5eac10052
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jul 8 04:57:08 2017 +0530
+
+    Updates the implementation of ImageListModel.
+    
+    Summary: ImageListModel now uses ImageStorage::instance() to set the images in the model instead of setting it explicitly by the qml code
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6471
+    
+    Differential Revision: https://phabricator.kde.org/D6561
+
+commit 46596025dd830b2b1b4ecf19d519bf6fea316e9d
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 23:39:00 2017 +0530
+
+    Adds LocationGroup, TimeGroup enumeration to the Types class
+    
+    Summary: Refs T6471
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6471
+    
+    Differential Revision: https://phabricator.kde.org/D6559
+
+commit d3338b96a10da82cfc9ba320ee6de95f1b78c8a3
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 21:24:33 2017 +0530
+
+    Get rid of ImageStorage::imageForFolders
+    
+    Summary:
+    Refs T6470
+    * Removes the code from the ImageStorage class, required by ImageFolderModel from old codebase.
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6470
+    
+    Differential Revision: https://phabricator.kde.org/D6557
+
+commit e16fa0bc4f6fd3603555fee40031bd47edfd6d5c
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 15:15:38 2017 +0530
+
+    Updates author in license section
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6548
+
+commit 2f9c76d8eb6a14c6e5660db947d660988df15303
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 14:46:50 2017 +0530
+
+    Removes the removeImage() from ImageTimeModel and ImageLocationModel
+    
+    Summary: * Since there is KDirWatch which will notice the change in the directory, we don't need to specify specific removeImage function for ImageTimemodel and ImageLocationModel to remove image from the database, instead we can just call KIO::trash() and the signal handler (reindexSubFolder in FileSystemTracker) for KDirWatch automatically updates the database.
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6546
+
+commit d5707a5191b87eaf287613032d1b7f4bb6e5df79
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 14:39:07 2017 +0530
+
+    Make the ImageViewer a Kirigami.Page
+    
+    Summary:
+    * ImageViewer is now a Kirigami page
+    * Handles the focus during transitions
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6545
+
+commit 7848c5f0de9ca7a970e58252ec7a1837b9af5ea4
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 03:32:22 2017 +0530
+
+    Implements deleteSelection function for contextual action
+    
+    Summary:
+    * deleteSelection function just uses KIO::trash() to remove the image from disk
+    * Since the folders are watched by KDirWatch it should automatically update in the model
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6539
+
+commit a5e9ae5b0337d64d6b6c98f3514036ab49c2ad2b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jul 7 02:44:04 2017 +0530
+
+    Changes the currentIndex highlight in the View (pageStack's current column) when the ImageViewer is navigated through arrow Keys
+    
+    Summary: When the imageviewer is navigated through arrow keys it updates the currentImage.index to implicitly update currentIndex (higlighted) in view.
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6530
+
+commit d79e380c35b6bd35762afcc86fd13a0eddca0161
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jul 5 19:49:07 2017 +0530
+
+    Add KDirWatch to support the live update of the models according to the change in directory
+    
+    Summary:
+    * Adds KDirWatch
+    * When files in watched directory is changed, FileSystemTracker again scans the changed directory to update the database,
+    * When database is updated ImageStorage::instance() emits storageModified signal which then allows the ImageLocationModel, ImageTimeModel to update themselves
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6515
+
+commit 4afcc0e2de26f776e307867c08b1112ba5a27d7e
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jul 4 18:24:17 2017 +0530
+
+    i18n'ize all the text elements
+    
+    Summary: * Changes the qsTr text to i18n
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6501
+
+commit fc68df58d076a385be8e778a8fcc8ef1d908ad37
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jul 4 18:11:06 2017 +0530
+
+    Adding support for KI18n
+    
+    Summary:
+    * Application will now support i18n text
+    * Earlier it supported i18n text for org.kde.desktop style and not Material
+    * It will supports i18n in Material too
+    
+    Test Plan: Testing done
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6500
+
+commit e9e383979be388b253b3503a3abf845e04668adc
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jul 4 17:05:00 2017 +0530
+
+    Adds lambda function to update the value of containImages for the AlbumView
+    
+    Test Plan:
+    * working properly
+    * the view in the Koko updates automatically, if the files in the folders directory are changed
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6499
+
+commit be9931a9e071c7b2ddde29b7c67f1e8112930353
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 3 19:23:36 2017 +0530
+
+    Adds a "Delete selections" action to contextDrawer of AlbumView
+    
+    Summary:
+    * "Delete selections" action enables and disables according to the selections.
+    * NOT IMPLEMENTED YET
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6483
+
+commit 0e6a0fa0764f2d99479ef57b9915972d67ed4681
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 3 18:13:17 2017 +0530
+
+    Add "Select all" and "Deselect all" action to the contextDrawer for AlbumView
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6482
+
+commit 2c088c99fc7b8f3b32349a34df72dc5eb237f476
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 3 14:55:16 2017 +0530
+
+    Removes the old qml file codebase
+    
+    Summary: * Changes the commandline arguments, now kirigami ui runs without --kirigami\
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6479
+
+commit fe7ed818917b444ccb93f21f9e8c8e55310faf47
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jul 3 14:07:39 2017 +0530
+
+    Makes the Thumbnail use the thumbnailer, common to all the models
+    
+    Summary:
+    Refs T6422
+    * Creates a RoleNames enum in Roles class which is kept common for every model
+    * Thumbnail generation code is in SortModel now
+    * ThubnailRole uses the ImageUrlRole of every model to generate thumbnails for the image.
+    * The CoverRole of the ImageLocationModel and ImageTimeModel has been changed to ImageUrlRole
+    * ImageUrlRole for ImageTimeModel and ImageLocationModel returns the url of the first image in the collection ie the cover image
+    * A little modification has been done in ImageStorage's functions to add "file://" prefix to the urls it returns for the ImageTimeModel and ImageLocationModel
+    
+    Test Plan: testing has been done for all the models
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6422
+    
+    Differential Revision: https://phabricator.kde.org/D6478
+
+commit 77329df1ff425f5f87727bef25114274a1b98f9a
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jul 1 01:50:15 2017 +0530
+
+    Makes the basics of ImageFolderModel works
+    
+    Summary:
+    Refs T6421
+    * "By Folder" navigation works now
+    * Selection is also possible in "By Folder" view
+    * On clicking or selecting a folder( which is distinguished by the AlbumDelegate) a new column is pushed to the pageStack
+    * "By Folder" shows mixed folders and images that are navigable in hierarchy
+    * SelectedRole from the ImageFolderModel is removed as the ImageFolderModel is wrapped inside that of the SortModel which already implements SelectedRole
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6421
+    
+    Differential Revision: https://phabricator.kde.org/D6457
+
+commit 2672f180b01f01a18a264658fe7befa0e4ba6107
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jun 30 21:08:12 2017 +0530
+
+    When the currentIndex in the ImageViewer changed, updates the grid's currentIndex too
+    
+    Summary: * Adds a new property view in the currentImage, that holds the current gridView so that it can change the gridView's currentIndex too
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6420
+    
+    Differential Revision: https://phabricator.kde.org/D6454
+
+commit fce428f6f6d2b06c6a35688043cc6c8f153efd8a
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jun 30 20:18:44 2017 +0530
+
+    When the currentIndex in the ImageViewer changed, updates the grid's currentIndex too
+    
+    Summary: * Adds a new property view in the currentImage, that holds the current gridView so that it can change the gridView's currentIndex too
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6420
+    
+    Differential Revision: https://phabricator.kde.org/D6454
+
+commit 0639c770c735ae47be1e11f1eb9c89c2ab594f24
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jun 30 12:31:19 2017 +0530
+
+    Corrects sorting order for By Time images
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6439
+
+commit 700e290599025d6b35290f017f35055a4e6a5d2f
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 29 23:18:51 2017 +0530
+
+    Clears the selection when Escape key is pressed
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6438
+
+commit e27ff434dfeabeee8976c51d9e3c9877a54ff3c3
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 29 21:30:12 2017 +0530
+
+    Clears the selections when new page is pushed to the column
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6437
+
+commit 6d71305179e98acc11bf6db1d549448acf861c1a
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 29 20:19:32 2017 +0530
+
+    GUI implementation for ImageListModel
+    
+    Summary:
+    - Adds ImageListModel to GUI
+    - The view is still broken for ImageFolderModel since it is based on KIO
+    - Selections actions have also been implemented
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6421
+
+commit 5958512a693917648a15e378310c543ba77be6b1
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 29 15:59:01 2017 +0530
+
+    Adds a new ItemTypeRole to the models
+    
+    Summary: ItemTypeRole returns any one value from "album", "folder", "image" etc
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6428
+
+commit 3ee003c44b5b3a90d27f02d13f069a77d0ea8f70
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jun 28 21:08:16 2017 +0530
+
+    Creates a new model ImageListModel that stores the list of images
+
+commit e06a324bacfe2bbba94570abb5d83c44953e9604
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jun 27 19:20:23 2017 +0530
+
+    Removes Baloo dependency
+    
+    Summary: * Application no longer uses Baloo for image fetching
+    
+    Test Plan: Works fine without Baloo, uses FileSystemImageFetcher that uses Qt's library(QMimeDatabase, QDirIterator) to fetch images
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6407
+
+commit d5f46d4a30deeca7a9de8f8eb43961b7a5be62ea
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jun 27 17:45:58 2017 +0530
+
+    Making the selectionHighlight visiblity status dependent on the m_selectionModel of the Koko.SortModel
+    
+    Summary:
+    * Highlighting of the items now depends on whether the item is selected or not in the m_selectionModel
+    * Adds a new SelectionRole to SortModel
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Subscribers: #koko
+    
+    Differential Revision: https://phabricator.kde.org/D6393
+
+commit 862d8752b2c04f8f7b979605efde56f93df1fe67
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jun 24 19:14:43 2017 +0530
+
+    Just a single delegate implementation for the main overlay view
+    
+    Summary:
+    * Removes the OverviewPage and AutomaticSpacingGrid as the implementation was quite similar to the AlbumView
+    * Shows the image item & its label if the delegate is a collection
+    * Shows just the image item if the delegate is an image
+    * isCollection decides whether the model is of collections or not
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6369
+
+commit 950eb315ba41a7065124750d88f7a04a0d27cf74
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jun 24 04:03:47 2017 +0530
+
+    Introduces selection of Albums using corner action concept
+    
+    Summary:
+    * Handles both UI and backend modelling for selecting of albums
+    * Uses QItemSelectionModel for handling the back end
+    * Just allows selection of items using the mouse (ie no Shift key or Ctrl key selections are implemented yet)
+    * Does not use states to handle selections of collections
+    
+    Test Plan: * Testing done with org.kde.desktop, Material and with the env QT_QUICK_CONTROLS_MOBILE=1
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Subscribers: #koko
+    
+    Differential Revision: https://phabricator.kde.org/D6365
+
+commit e7e90e8732aa27eacae020610625a839f88ea321
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jun 21 17:27:27 2017 +0530
+
+    Creates a separate file for the AlbumViewDelegate
+    
+    Summary: MouseArea now covers the whole thumbnail
+    
+    Test Plan: Tested with Material and org.kde.desktop qqc2 theme
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Differential Revision: https://phabricator.kde.org/D6311
+
+commit 917aadbc60cbde99245e49311a5e8703d563573c
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jun 20 23:24:14 2017 +0530
+
+    Adds a settings button to the SideBar
+    
+    Reviewers: mart, #koko
+    
+    Reviewed By: mart, #koko
+    
+    Differential Revision: https://phabricator.kde.org/D6302
+
+commit a21df3fd0684ef3e29313187fefa6c60b6fbbaae
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue Jun 20 16:42:42 2017 +0530
+
+    Adds .arcconfig
+    
+    Reviewers: mart
+    
+    Reviewed By: mart
+    
+    Differential Revision: https://phabricator.kde.org/D6295
+
+commit 09da10bf26216eba74df6e99273797be067ed07c
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jun 19 23:30:47 2017 +0530
+
+    Sorts the collection in the AlbumView
+
+commit b4799847b3cb6b0036cff6e602cd71abb362a081
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jun 17 19:27:12 2017 +0530
+
+    Change duration of the animation of ImageViewer
+
+commit cef2be725285536e8eb1fb5b9334dc60e327b845
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jun 17 19:25:41 2017 +0530
+
+    Changes Label width in AlbumView delegate
+
+commit 62d36c89a3460bdf9e071929225f99b33c47b8a4
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jun 16 22:59:41 2017 +0530
+
+    Specifies the height and width to the delegates used in GridView in the AlbumView and AutomaticSpacingGrid.
+
+commit 4c30097dcb82b1101956cecc735032c444beca6b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jun 16 22:43:59 2017 +0530
+
+    Sets the currentIndex to the selected index on clicking image in the GridView
+
+commit d85b96c589e9f464d84eb11a61016f8e7f5d62eb
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Jun 14 03:26:52 2017 +0530
+
+    Adds states and transition to the ImageViewer
+
+commit bacb7504b5429a3b783a2255a81716e5151318a3
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jun 12 20:31:29 2017 +0530
+
+    Adds ListView to the full screen ImageViewer
+
+commit a64652a1c0a64701cfa3a9878d22c3895f480a64
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jun 12 00:37:39 2017 +0530
+
+    Implements just the basic ImageViewer( displays single image). Ought to improve further.
+
+commit 20e5c3ffa1128539f224fa349bba06a07920d83b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sun Jun 11 19:51:16 2017 +0530
+
+    Changes type of previouslySelectedAction from string to Kirigami.Action.
+     - No use of findAction function now
+
+commit bf93eb574b8aeb95161faa16430cabd102ba6d8f
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sat Jun 10 17:52:47 2017 +0530
+
+    Make sidebar actions look selected when the corresponding view is loaded
+
+commit 4bfc07a3017db3a88701a369860d252f6b9438eb
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 8 23:04:34 2017 +0530
+
+    Sets the header title for each page
+
+commit b43ea8397bc97beb2005ac4a8fea5539c12be48b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 8 22:39:01 2017 +0530
+
+    Adds header to the main file
+
+commit 2f089796c074f9bb7f4afaaaa8f97b39c0754342
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Thu Jun 8 22:22:58 2017 +0530
+
+    Removes handleVisible property for the GlobalDrawer
+
+commit 635cdf3ef4a5c0960f47ad1d84199c1f4cf3ec5f
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Jun 5 18:31:10 2017 +0530
+
+    Change the delegate for the AlbumView
+     - each delegate is now FocusScope which is composed of Image and Kirigami's BasicListItem for showing label.
+
+commit 03ae360b184446cabb9a872ebb470083fd8bc1c5
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri Jun 2 01:11:47 2017 +0530
+
+    Wire up the main view with the sidebar
+     - Adds AlbumView page (to show cover image)
+     - pageStack now changes the model-view according to the filter selected from the sidebar
+
+commit 6a8b48f1bc6c2f1f83f20c7632dd99146ded9be4
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed May 31 19:57:16 2017 +0530
+
+    Adds Path action in Sidebar
+
+commit 7d0ea393c62f1abdf1f123f9b9bcca7f43afcffc
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed May 31 18:41:46 2017 +0530
+
+    Basic GlobalDrawer implementation for the sidebar
+
+commit 7f91596f9b37a57bec7a431b1427417706c9891b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue May 30 17:38:22 2017 +0530
+
+    Basic ScrollablePage implementation for browsing the images
+
+commit 07268b43797640037041fed6151abf61bb982d6f
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue May 23 22:11:01 2017 +0530
+
+    Creates a new folder for koko qml ui Kirigami
+
+commit 4a1f60ae2b4f1c76d970f2febca49a64cc0d7639
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri May 19 23:43:33 2017 +0530
+
+    Adds license to fileinfo.cpp and fileinfo.h
+
+commit eaffd4d21de328c01d63820ca9a76583a82b6938
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Fri May 19 19:22:42 2017 +0530
+
+    Adds FileInfo class to check existence of the image
+
+commit 54cf7eb94b91d1272eee735e1390ea343351b147
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Tue May 16 15:21:53 2017 +0530
+
+    ImageViewer does not show grey images
+
+commit 2867d03d7d393118c5c81c76e43acea4d30b240b
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sun May 7 21:17:49 2017 +0530
+
+    Implements deleteImage function. Removes the image url from sql database
+
+commit 545ec20e2d1ac7948bd11b99e0dda47dc2da9dd9
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Sun May 7 21:16:52 2017 +0530
+
+    Adds deleteImage functionality (handles flow of control in qml)
