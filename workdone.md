@@ -1,3 +1,44 @@
+---
+layout: page
+---
+commit a20ba0ccec248a0cacedae0157dc507123d4bc78
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Wed Aug 23 00:48:42 2017 +0530
+
+    Changes the brightness of image using GammaAdjust QtGraphicalEffects
+    
+    Summary:
+    Refs T6268
+    * uses grabToItem function to capture the modified image
+    
+    Test Plan: there is just one problem the size of the image changes
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Subscribers: colomar
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7468
+
+commit d637b2ebaee06b7162d291f28049695e5980b7f4
+Author: Atul Sharma <atulsharma406@gmail.com>
+Date:   Mon Aug 21 17:54:19 2017 +0530
+
+    Reset the brightness handle to initial value when Cancel is pressed
+    
+    Summary: Refs T6268
+    
+    Reviewers: #koko, mart
+    
+    Reviewed By: #koko, mart
+    
+    Maniphest Tasks: T6268
+    
+    Differential Revision: https://phabricator.kde.org/D7452
+
 commit 4c563acdbe1af37b48cebba453eee4c741837105
 Author: Atul Sharma <atulsharma406@gmail.com>
 Date:   Sun Aug 20 04:17:35 2017 +0530
@@ -1117,39 +1158,3 @@ Author: Atul Sharma <atulsharma406@gmail.com>
 Date:   Tue May 30 17:38:22 2017 +0530
 
     Basic ScrollablePage implementation for browsing the images
-
-commit 07268b43797640037041fed6151abf61bb982d6f
-Author: Atul Sharma <atulsharma406@gmail.com>
-Date:   Tue May 23 22:11:01 2017 +0530
-
-    Creates a new folder for koko qml ui Kirigami
-
-commit 4a1f60ae2b4f1c76d970f2febca49a64cc0d7639
-Author: Atul Sharma <atulsharma406@gmail.com>
-Date:   Fri May 19 23:43:33 2017 +0530
-
-    Adds license to fileinfo.cpp and fileinfo.h
-
-commit eaffd4d21de328c01d63820ca9a76583a82b6938
-Author: Atul Sharma <atulsharma406@gmail.com>
-Date:   Fri May 19 19:22:42 2017 +0530
-
-    Adds FileInfo class to check existence of the image
-
-commit 54cf7eb94b91d1272eee735e1390ea343351b147
-Author: Atul Sharma <atulsharma406@gmail.com>
-Date:   Tue May 16 15:21:53 2017 +0530
-
-    ImageViewer does not show grey images
-
-commit 2867d03d7d393118c5c81c76e43acea4d30b240b
-Author: Atul Sharma <atulsharma406@gmail.com>
-Date:   Sun May 7 21:17:49 2017 +0530
-
-    Implements deleteImage function. Removes the image url from sql database
-
-commit 545ec20e2d1ac7948bd11b99e0dda47dc2da9dd9
-Author: Atul Sharma <atulsharma406@gmail.com>
-Date:   Sun May 7 21:16:52 2017 +0530
-
-    Adds deleteImage functionality (handles flow of control in qml)
