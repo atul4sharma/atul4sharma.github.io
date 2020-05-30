@@ -20,7 +20,7 @@
 
 title: Atul Sharma
 email: atulsharma406@gmail.com
-header-img: img/home-bg.jpg
+header-img: /img/home-bg.jpg
 description: "Blog and Stuff"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -29,11 +29,13 @@ github_username:  atul4sharma
 linkedin_username: atul4sharma
 
 # Build settings
-theme: jekyll-theme-clean-blog
+#theme: minima
+remote_theme: jekyll-theme-clean-blog
 markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
