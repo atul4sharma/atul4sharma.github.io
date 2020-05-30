@@ -23,7 +23,7 @@ email: atulsharma406@gmail.com
 header-img: img/home-bg.jpg
 description: "Blog and Stuff"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://atul4sharma.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: atulsharma406
 github_username:  atul4sharma
 linkedin_username: atul4sharma
