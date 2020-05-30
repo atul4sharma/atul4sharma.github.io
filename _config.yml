@@ -29,7 +29,7 @@ github_username:  atul4sharma
 linkedin_username: atul4sharma
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
 markdown: kramdown
 highlighter: rouge
 plugins:
