@@ -37,5 +37,19 @@ docker image ls
 <img src="/gifs/docker_images.gif" alt="Output"
 	title="Output" width="900" height="400" />
 
+## Building docker image
+
+<img src="/gifs/docker_pswebapp_image_build.gif" alt="Output"
+	title="Output" width="900" height="400" />
+
+
+## Docker Container
+
+```sh
+docker container run -it ubuntu:latest /bin/bash
+docker container ls
+```
+
+
 ## References
 Educative - [Course by Nigel Poulton](https://www.educative.io/courses/beginners-guide-to-docker)
