@@ -34,14 +34,13 @@ docker image ls
 ![Output](/gifs/docker_images.gif){ width=90% height=30 style="float:left; padding:16px"}
 -->
 
-<img src="/gifs/docker_images.gif" alt="Output"
+<img src="/gifs/docker_images.gif" alt="docker_images"
 	title="Output" width="900" height="400" />
 
 ## Building docker image
 
-<img src="/gifs/docker_pswebapp_image_build.gif" alt="Output"
-	title="Output" width="900" height="400" />
-
+<img src="/gifs/docker_pswebapp_image_build.gif" alt="build_docker_image"
+	title="Output" width="1000" height="700" />
 
 ## Docker Container
 
@@ -49,6 +48,10 @@ docker image ls
 docker container run -it ubuntu:latest /bin/bash
 docker container ls
 ```
+
+## Docker engine architecture
+<img src="/img/docker_engine_architecture.png" alt="docker_engine"
+	title="Output" width="900" height="400" />
 
 
 ## References
