@@ -1,5 +1,5 @@
 ---
-layout: page
+category: page
 title: About
 description: This is what I do
 background: "/img/about-bg.jpg"

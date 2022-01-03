@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 tags: ['KDE']
 ---
 ### Set up the arcanist for Koko

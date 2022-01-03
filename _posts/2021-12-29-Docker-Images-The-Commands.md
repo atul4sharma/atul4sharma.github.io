@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 title: Docker Images - The Commands
 subtitle: Summary of docker images commands
 background: '/img/home-bg.jpg'

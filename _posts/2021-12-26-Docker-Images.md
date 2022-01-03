@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 title: Docker Images
 subtitle: Getting in depth of docker images
 background: '/img/home-bg.jpg'

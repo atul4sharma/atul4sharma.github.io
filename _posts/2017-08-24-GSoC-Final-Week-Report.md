@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 ---
 #### Introduction to Koko
 Koko is a simple image gallery application that is designed to view, edit and share the images.

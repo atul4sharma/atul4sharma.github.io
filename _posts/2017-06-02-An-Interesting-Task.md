@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 tags: ['KDE']
 ---
 ### Yesterday was interesting.

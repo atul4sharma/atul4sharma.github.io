@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 title: Dockerfile
 subtitle: Dockerfile
 background: '/img/home-bg.jpg'

@@ -30,15 +30,11 @@ github_username:  atul4sharma
 linkedin_username: atul4sharma
 
 # Build settings
-remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 markdown: kramdown
 highlighter: rouge
-paginate: 5
-paginate_path: "/posts/page:num/"
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 title: Docker Technology
 subtitle: Basic understanding of docker technology
 background: '/img/home-bg.jpg'

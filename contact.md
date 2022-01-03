@@ -1,5 +1,5 @@
 ---
-layout: page
+category: page
 title: Contact Me
 description: Have questions?
 background: '/img/bg-contact.jpg'

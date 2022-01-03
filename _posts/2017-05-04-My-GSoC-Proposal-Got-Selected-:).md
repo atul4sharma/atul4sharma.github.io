@@ -1,5 +1,5 @@
 ---
-layout: post
+category: post
 tags: ['KDE']
 ---
 ## Every Summer has it's story.
