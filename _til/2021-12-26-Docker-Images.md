@@ -1,15 +1,15 @@
 ---
-category: post
+category: til
 title: Docker Images
 subtitle: Getting in depth of docker images
-background: '/img/home-bg.jpg'
+background: '/assets/img/home-bg.jpg'
 ---
 
 ## Brief
 A docker image contains enough of an operating system (OS), as well as all the code and dependencies to run whatever application it’s designed for. Docker images are like stopped containers. Think of **image** as *build-time* construct and **containers** as *runtime-construct*
 
 <figure>
-<img src="/img/docker_image_container_relation.png" alt="docker_images"
+<img src="/assets/img/docker_image_container_relation.png" alt="docker_images"
 title="docker image and container high level relation" width="800" height="400" />
 </figure>
 
@@ -87,7 +87,7 @@ It’s important to understand that as additional layers are added, the image is
 Let's say there are two layers in an image and each layer has 3 files, but the overall image will have 6 files, as it is a combination of both layers.   
 
 <figure>
-<img src="/img/docker_images_layers.png"
+<img src="/assets/img/docker_images_layers.png"
     alt="docker image and layers"
     width="800" height="400" >
 <figcaption>Docker image as read-only layers</figcaption>
@@ -101,7 +101,7 @@ You can inspect the layers in an image using command
 
 ---
 <figure>
-<img src="/img/docker_layers.png"
+<img src="/assets/img/docker_layers.png"
     alt="docker image layers"
     width="800" height="300" >
 <figcaption>Multiple layers in a Docker image</figcaption>

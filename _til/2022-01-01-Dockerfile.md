@@ -1,19 +1,21 @@
 ---
-category: post
+category: til
 title: Dockerfile
 subtitle: Dockerfile
-background: '/img/home-bg.jpg'
+background: '/assets/img/home-bg.jpg'
 ---
 
 ## Sample Dockerfile  
-> FROM alpine  
-> LABEL maintainer="example@gmail.com"  
-> RUN apk add --update nodejs nodejs-npm  
-> COPY . /src  
-> WORKDIR /src  
-> RUN npm install  
-> EXPOSE 8080  
-> ENTRYPOINT ["node", "./app.js"]  
+```
+FROM alpine  
+LABEL maintainer="example@gmail.com"  
+RUN apk add --update nodejs nodejs-npm  
+COPY . /src  
+WORKDIR /src  
+RUN npm install  
+EXPOSE 8080  
+ENTRYPOINT ["node", "./app.js"]  
+```
 
 ## Details  
 - FROM: The base layer of the image.  
@@ -26,7 +28,7 @@ background: '/img/home-bg.jpg'
 - ENTRYPOINT: The ENTRYPOINT instruction is used to set the main application that the image (container) should run.  
 
 <figure>
-<img src="/img/docker_custom_image_layers.png" alt="docker_custom_image_layers"
+<img src="/assets/img/docker_custom_image_layers.png" alt="docker_custom_image_layers"
 title="docker custom image layers" width="800" height="400" />
 </figure>
 

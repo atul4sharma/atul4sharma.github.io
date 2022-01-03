@@ -21,6 +21,6 @@ Koko is a simple image gallery application that is designed to view, edit and sh
 * There is a single AlbumView user interface for all different models. While applying filter just the model in the view changes. Whereas previously, different models ( ImageFolderModel, ImageTimeModel, ImageLocationModel) have different views
 
 #### List of commits merged into the master branch of the application during GSoC -2017
-[Go to Page ](/2017-08-24-workdone)<br>
-[This file](/workdone.log)
+[Go to Page ](/_pages/2017-08-24-workdone)<br>
+[This file](/_pages/workdone.log)
 

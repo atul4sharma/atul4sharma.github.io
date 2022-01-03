@@ -1,8 +1,8 @@
 ---
-category: post
+category: til
 title: Docker Containers
 subtitle: Getting in depth of docker containers
-background: '/img/home-bg.jpg'
+background: '/assets/img/home-bg.jpg'
 ---
 
 ## Docker container - TLDR  
@@ -17,7 +17,7 @@ Simplest way to run a container from docker image is
 docker container run -it ubuntu /bin/bash
 ```
 
-<img src="/gifs/docker_container_run.gif" alt="docker_container_run"
+<img src="/assets/gifs/docker_container_run.gif" alt="docker_container_run"
 	title="docker container run" width="900" height="400" />
 
 ### Stopping a container  
