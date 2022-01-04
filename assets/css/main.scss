@@ -34,6 +34,12 @@
   }
 }
 
+#site-nav {
+  .visible-links {
+    justify-content: flex-start;
+  }
+}
+
 .archive {
   .archive__item {
     .archive__item-title {
