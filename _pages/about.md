@@ -1,15 +1,19 @@
 ---
-title: Thanks for Stopping By!
+title: About me!
 permalink: /about/
+subtitle: This is what I do
 ---
 
 <img class="img-circle atul" src="/assets/img/atul.jpg" />
 
-I'm a Seattle native living in Chicago, currently working at [Flexport][flexport]{:target="_blank"} as an engineering manager on the Trucking team. We manage the [Transmission][trans] web and mobile applications, which help carriers effectively manage their fleets via real time GPS data and delivery statuses.
+- Software Engineer (C++) @NatWest Group  
+- Cricketer  
 
-With a formative background in engineering, and expertise in software quality and agile methodologies, I'm constantly looking for ways to leverage my technical skills to teach others and contribute to meaningful projects.
 
-[Check out my resume][resume]{:target="_blank"} or feel free to connect with me on [LinkedIn][linkedin]{:target="_blank"}.
+## TODO  
 
-[linkedin]: https://www.linkedin.com/in/atul4sharma
-[resume]: /assets/pdf/Brian-Ambielli-Resume.pdf
+- [ ] Modify blog UI
+    - [X] Add **TIL**(Today I learned) format to the blog
+    - [ ] Change the theme of the blog 
+
+
