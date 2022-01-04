@@ -1,14 +1,15 @@
 ---
 title: About me!
 permalink: /about/
-subtitle: This is what I do
+excerpt: This is what I do!
 ---
 
-<img class="img-circle atul" src="/assets/img/atul.jpg" />
+<img class="img-circle atul" src="/assets/img/atul.jpg" width=300px height=300px/>
 
 - Software Engineer (C++) @NatWest Group  
 - Cricketer  
 
+---
 
 ## TODO  
 
