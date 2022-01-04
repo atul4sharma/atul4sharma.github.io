@@ -2,7 +2,6 @@
 category: til
 title: Dockerfile
 subtitle: Dockerfile
-background: '/assets/img/home-bg.jpg'
 ---
 
 ## Sample Dockerfile  

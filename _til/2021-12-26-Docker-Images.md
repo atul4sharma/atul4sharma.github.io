@@ -2,7 +2,6 @@
 category: til
 title: Docker Images
 subtitle: Getting in depth of docker images
-background: '/assets/img/home-bg.jpg'
 ---
 
 ## Brief

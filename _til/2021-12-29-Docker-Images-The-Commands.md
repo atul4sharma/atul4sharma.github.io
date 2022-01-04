@@ -2,7 +2,6 @@
 category: til
 title: Docker Images - The Commands
 subtitle: Summary of docker images commands
-background: '/assets/img/home-bg.jpg'
 ---
 
 - `docker image pull` is the command to download images. We pull images from repositories inside of remote registries. By default, images will be pulled from repositories on Docker Hub. The following command will pull the image tagged as `latest` from the alpine repository on Docker Hub: `docker image pull alpine:latest`.

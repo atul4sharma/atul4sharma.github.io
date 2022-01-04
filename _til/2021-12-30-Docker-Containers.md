@@ -2,7 +2,6 @@
 category: til
 title: Docker Containers
 subtitle: Getting in depth of docker containers
-background: '/assets/img/home-bg.jpg'
 ---
 
 ## Docker container - TLDR  

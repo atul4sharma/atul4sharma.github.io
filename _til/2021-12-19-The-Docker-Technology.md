@@ -2,7 +2,6 @@
 category: til
 title: Docker Technology
 subtitle: Basic understanding of docker technology
-background: '/assets/img/home-bg.jpg'
 ---
 
 # Major components:
