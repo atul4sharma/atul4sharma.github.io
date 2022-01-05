@@ -18,5 +18,6 @@ excerpt: This is what I do!
     - [X] Change the theme of the blog 
     - [X] Change the font
     - [ ] Change the highlighting. Markdown highlighting is not very intuitive.
+    - [ ] tags are only evaluated for _posts directory. Make it parse all tags OR move _til post to _posts and still show the TIL posts on it's page
 
 
