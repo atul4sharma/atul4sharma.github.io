@@ -1,7 +1,8 @@
 ---
-category: til
 title: Docker Images
 subtitle: Getting in depth of docker images
+tags: ['docker']
+category: til
 ---
 
 ## Brief

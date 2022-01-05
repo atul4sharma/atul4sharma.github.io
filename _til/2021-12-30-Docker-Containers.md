@@ -1,7 +1,8 @@
 ---
-category: til
 title: Docker Containers
 subtitle: Getting in depth of docker containers
+tags: ['docker']
+category: til
 ---
 
 ## Docker container - TLDR  

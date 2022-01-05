@@ -1,8 +1,9 @@
 ---
-category: til
 title: Docker Technology
 subtitle: Basic understanding of docker technology
 toc: true
+tags: ['docker']
+category: til
 ---
 
 # Major components:

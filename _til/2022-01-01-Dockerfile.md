@@ -1,7 +1,8 @@
 ---
-category: til
 title: Dockerfile
 subtitle: Dockerfile
+tags: ['docker']
+category: til
 ---
 
 ## Sample Dockerfile  
