@@ -15,6 +15,8 @@ excerpt: This is what I do!
 
 - [ ] Modify blog UI
     - [X] Add **TIL**(Today I learned) format to the blog
-    - [ ] Change the theme of the blog 
+    - [X] Change the theme of the blog 
+    - [X] Change the font
+    - [ ] Change the highlighting. Markdown highlighting is not very intuitive.
 
 

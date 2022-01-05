@@ -5,7 +5,7 @@ subtitle: Dockerfile
 ---
 
 ## Sample Dockerfile  
-```
+```Dockerfile
 FROM alpine  
 LABEL maintainer="example@gmail.com"  
 RUN apk add --update nodejs nodejs-npm  
