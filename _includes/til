@@ -1,0 +1,6 @@
+
+<div class="grid__wrapper">
+  {% for post in site.til reversed %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
