@@ -4,6 +4,14 @@
 
 @charset "utf-8";
 
+$serif              : "PT Serif", Georgia, Times, serif;
+$sans-serif-narrow  : "Fira Code", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace          : "PT Mono", Consolas, "Lucida Console", monospace;
+
+$global-font-family : $serif;
+$header-font-family : $sans-serif-narrow;
+
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
