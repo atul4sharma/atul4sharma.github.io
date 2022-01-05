@@ -28,7 +28,7 @@ ENTRYPOINT ["node", "./app.js"]
 
 <figure>
 <img src="/assets/img/docker_custom_image_layers.png" alt="docker_custom_image_layers"
-title="docker custom image layers" width="800" height="400" />
+title="docker custom image layers" />
 </figure>
 
 

@@ -12,12 +12,12 @@ A container is the runtime instance of an image. In the same way that you can st
 Simplest way to run a container from docker image is  
 `docker container run <image> <app>`
 
-```sh
+```bash
 docker container run -it ubuntu /bin/bash
 ```
 
 <img src="/assets/gifs/docker_container_run.gif" alt="docker_container_run"
-	title="docker container run" width="900" height="400" />
+	title="docker container run" />
 
 ### Stopping a container  
 Containers run until the app they are executing exits.  

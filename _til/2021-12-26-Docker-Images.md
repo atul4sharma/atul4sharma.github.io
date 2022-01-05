@@ -9,14 +9,14 @@ A docker image contains enough of an operating system (OS), as well as all the c
 
 <figure>
 <img src="/assets/img/docker_image_container_relation.png" alt="docker_images"
-title="docker image and container high level relation" width="800" height="400" />
+title="docker image and container high level relation" />
 </figure>
 
 We use the docker container run and docker service create commands to start one or more containers from a single image. Once you’ve started a container from an image, the two constructs become dependent on each other, and you cannot delete the image until the last container using it has been stopped and destroyed. 
 
 
 ### Pulling the image - Getting the image from remote repository to local repository
-```sh
+```bash
 docker image pull alpine:latest
 docker image ls
 ```
@@ -27,7 +27,7 @@ Docker images are stored in a centralized location known as *Image Registry*.
 Image Registry contain multiple image repositories.
 
 Run the following command to check the default image registry
-```sh
+```bash
 docker info
 ```
 
@@ -44,7 +44,7 @@ If a **\<tag\>** is not specified then it tries to pull image with tag **latest*
 
 ### Multiple tags
 Single image can have multiple tags.
-```sh 
+```bash 
 # To pull all tags of an image
 docker image pull -a alpine
 ```
@@ -52,7 +52,7 @@ docker image pull -a alpine
 *latest* tag is not guaranteed to point to the latest image.
 
 ## filtering `image ls` output
-```sh 
+```bash 
 docker image ls --filter <filter_name>=<value>
 ```  
 - Use option `--filter` to filter some of the *image ls* output.
@@ -88,7 +88,7 @@ Let's say there are two layers in an image and each layer has 3 files, but the o
 <figure>
 <img src="/assets/img/docker_images_layers.png"
     alt="docker image and layers"
-    width="800" height="400" >
+    />
 <figcaption>Docker image as read-only layers</figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ You can inspect the layers in an image using command
 <figure>
 <img src="/assets/img/docker_layers.png"
     alt="docker image layers"
-    width="800" height="300" >
+    />
 <figcaption>Multiple layers in a Docker image</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Theory: Assume you are running Docker on a Raspberry Pi (Linux running on ARM ar
 
 
 ## Deleting docker image  
-```sh
+```bash
 docker image rm <image_id>  
 #To delete all images  
 docker image rm $(docker image ls -q) -f
