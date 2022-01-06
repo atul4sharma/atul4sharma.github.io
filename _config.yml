@@ -286,6 +286,8 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+date_format: '%d %b %Y'
+
 # Defaults
 defaults:
   # _posts
@@ -295,11 +297,12 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
-      share: true
+      share: false
       related: true
       show_date: true
+      show_tags: true
 
   # _pages
   - scope:

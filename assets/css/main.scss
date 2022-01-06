@@ -75,3 +75,21 @@ $header-font-family : $sans-serif-narrow;
   max-width: 200px;
 }
 
+.post-tag {
+  display: inline-block;
+  background: rgba(blue, 0.10);
+  padding: 0 .5rem;
+  border-radius: 4px;
+  color: blue;
+  font-size: 90%;
+  &:before {
+    content: "\f02c";
+    font-family: FontAwesome;
+    padding-right: .4em;
+  }
+  &:hover {
+    text-decoration: none;
+    background: lightblue;
+    color: white;
+  }
+}
