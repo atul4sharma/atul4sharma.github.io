@@ -9,5 +9,6 @@ main:
   - title: "Today I Learned"
     url: /til/
 
-      #- title: "Travel"
-      #  url: /travel/
+  - title: "Posts by Tag"
+    url: /tags/
+
