@@ -282,10 +282,6 @@ compress_html:
     envs: development
 
 collections:
-  til:
-    output: true
-    permalink: /:collection/:path/
-
   posts:
     output: true
     permalink: /:collection/:path/
@@ -314,16 +310,5 @@ defaults:
       author_profile: true
       show_date: true
 
-  # _til
-  - scope:
-      path: ""
-      type: til
-    values:
-      layout: single
-      author_profile: true
-      show_date: true
-      related: true
-      read_time: true
-      comments: true
 
 
