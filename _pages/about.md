@@ -6,7 +6,7 @@ excerpt: This is what I do!
 
 <img class="img-circle atul" src="/assets/img/atul.jpg" width=300px height=300px/>
 
-- Software Engineer (C++) @NatWest Group  
+- Software Engineer @[Bloomberg LP](https://www.bloomberg.com/company/careers/working-here/)
 - Cricketer  
 
 ---
