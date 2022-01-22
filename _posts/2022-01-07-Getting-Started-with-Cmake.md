@@ -96,7 +96,7 @@ add_executable(lab main.cpp)
     - VERSION is optional. Can be used to specify the project version here and other parts of the project can refer to it.  
     - LANGUAGES defines the programming languages that should be enabled for the project.  
 
-  One of it's important responsibility is to check the compilers for each enabled language and ensure that ther are able to compile and link successfully. 
+  One of it's important responsibility is to check the compilers for each enabled language and ensure that they are able to compile and link successfully. 
 
 - `add_executable` command  
   `add_executable(targetName source1 [source2 ...])`  
